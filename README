@@ -1,0 +1,5 @@
+            ==Seo-Params.==
+This library provides means to get SEO parameters
+like Yandex Tcy, Google Pr of the sites by there url.
+Also the lib supports methods to get is site in 
+popular catalogs: DMOZ, Yandex news, Google news, Yandex catalog.
