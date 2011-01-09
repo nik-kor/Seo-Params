@@ -3,7 +3,7 @@
 /**
  * GoogleNewsCatalogStrategy 
  * 
- * @uses SearchCatalog
+ * @uses SearchCatalogStrategy
  * @uses SearchCatalogInterface
  * @package search_catalog
  * @version $id$
@@ -11,7 +11,7 @@
  * @author Nikita E. Korotkih <nikita.korotkih@gmail.com> 
  * @license MIT license
  */
-class GoogleNewsCatalogStrategy extends SearchCatalog implements SearchCatalogInterface 
+class GoogleNewsCatalogStrategy extends SearchCatalogStrategy implements SearchCatalogInterface 
 {
     public function getPage() 
     {

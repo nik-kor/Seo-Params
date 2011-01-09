@@ -2,7 +2,7 @@
 /**
  * YACASearchCatalogStrategy 
  * 
- * @uses SearchCatalog
+ * @uses SearchCatalogStrategy
  * @uses SearchCatalogInterface
  * @package search_catalog
  * @version $id$
@@ -10,7 +10,7 @@
  * @author Nikita E. Korotkih <nikita.korotkih@gmail.com> 
  * @license MIT license
  */
-class YACASearchCatalogStrategy extends SearchCatalog implements SearchCatalogInterface 
+class YACASearchCatalogStrategy extends SearchCatalogStrategy implements SearchCatalogInterface 
 {
   
     public function getPage() 

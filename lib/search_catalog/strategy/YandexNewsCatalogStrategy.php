@@ -3,7 +3,7 @@
 /**
  * YandexNewsCatalogStrategy 
  * 
- * @uses SearchCatalog
+ * @uses SearchCatalogStrategy
  * @uses SearchCatalogInterface
  * @package search_catalog
  * @version $id$
@@ -11,7 +11,7 @@
  * @author Nikita E. Korotkih <nikita.korotkih@gmail.com> 
  * @license MIT license
  */
-class YandexNewsCatalogStrategy extends SearchCatalog implements SearchCatalogInterface 
+class YandexNewsCatalogStrategy extends SearchCatalogStrategy implements SearchCatalogInterface 
 {
     public function getPage()
     {
@@ -19,7 +19,11 @@ class YandexNewsCatalogStrategy extends SearchCatalog implements SearchCatalogIn
             $this->domain = substr($this->domain, 4);
         }
 
-        return $this->answer = parent::getPage('http://news.yandex.ru/yandsearch?text=' . $this->domain . '&rptval=on&rpt=smisearch&grhow=clutop');
+        return $this->answer = parent::getPage(
+                                        'http://news.yandex.ru/yandsearch?text=' . 
+                                        $this->domain . 
+                                        '&rptval=on&rpt=smisearch&grhow=clutop'
+                                );
     }
 
     public function isInCatalog() 

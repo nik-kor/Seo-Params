@@ -1,14 +1,15 @@
 <?php
 /**
- * SearchCatalog 
+ * SearchCatalogStrategy 
  * 
  * @abstract
  * @package search_catalog
+ * @version $id$
  * @copyright Nikita Korotkih
- * @author Nikita E. Korotkih <nikita.korotkih@gmail.com>
+ * @author Nikita E. Korotkih <nikita.korotkih@gmail.com> 
  * @license MIT license
-*/
-abstract class SearchCatalog 
+ */
+abstract class SearchCatalogStrategy 
 {
     protected $domain, $answer;
 
