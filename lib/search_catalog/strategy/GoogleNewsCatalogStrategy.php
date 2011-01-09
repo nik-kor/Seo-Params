@@ -19,7 +19,10 @@ class GoogleNewsCatalogStrategy extends SearchCatalog implements SearchCatalogIn
             $this->domain = substr($this->domain, 4);
         }
 
-        return $this->answer = parent::getPage('http://news.google.ru/news/search?pz=1&cf=all&ned=ru_ru&hl=ru&q=site:' . $this->domain);
+        return $this->answer = parent::getPage(
+                                    'http://news.google.ru/news/search?pz=1&cf=all&ned=ru_ru&hl=ru&q=site:' . 
+                                    $this->domain
+                                );
     }
 
     public function isInCatalog()
